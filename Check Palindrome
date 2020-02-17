@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+//Program to check whether PalindromE OR NOT
+
+
+int main() {
+	int last, num, rev_num = 0, original_num;
+	printf("Enter any Number: ");
+	scanf("%d", &num);
+	original_num = num;
+	while(num!=0){
+		last = num%10;
+		num = num/10;
+		rev_num = rev_num*10 + last;
+		
+	}
+	if (rev_num == original_num) printf("Palindrome");
+	else printf("Not Palindrome");
+	return 0;
+}

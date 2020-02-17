@@ -1,0 +1,16 @@
+#include <stdio.h>
+//Writes number of Zeroes in a Factorial
+int main() {
+	int n, original_n;
+	int count = 0;
+	scanf("%d", &n);
+	original_n = n;
+	
+	for(int i = 5; n/i >= 1; i*=5){
+		count += n/i;
+	}
+		
+	
+	printf("The Number of Trailing Zeroes in %d Factorial are: %d",original_n, count);
+	return 0;
+}
